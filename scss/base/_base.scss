@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'HelveticaNeue-Regular';
+    src:url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.ttf')  format('truetype')
+}
+
+body {
+    font-family: $reg;
+    color: white;
+    font-size: 22px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.21;
+}
