@@ -4,6 +4,7 @@
     height: 100vh;
     background-image: url(../img/header_bg.jpg);
     background-size: cover;
+    overflow: hidden;
 }
 
 .header__container {
@@ -19,6 +20,7 @@
     gap: 48px;
     justify-content: center;
     margin-bottom: 52px;
+    z-index: 5;
 }
 
 .header__language-switch-box {
@@ -38,6 +40,8 @@
     margin: 0 auto;
     padding: 10px 15px;
     text-align: center;
+    z-index: 5;
+    cursor: default;
 }
 
 .header__title {

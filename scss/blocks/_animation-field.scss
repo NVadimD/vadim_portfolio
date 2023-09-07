@@ -1,0 +1,101 @@
+.animation-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.deform  {
+    width: 380px;
+    height: 380px;
+    -webkit-transform: scaleX(2);
+    // border: 2px solid red;
+    left: 40%;
+    position: absolute;
+    top: 32%;
+    border-radius: 50%;
+}
+
+.rotate {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: circle 60s infinite linear;    
+    -webkit-transform-origin: 50% 50%;
+}
+
+.counterrotate {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 72px;
+    height: 72px;
+    -webkit-animation: ccircle 60s infinite linear;    
+}
+
+.counterrotate-2 {
+    position: absolute;
+    top: 0;
+    width: 72px;
+    height: 72px;
+    -webkit-animation: ccircle 60s infinite linear;    
+}
+
+.counterrotate-3 {
+    position: absolute;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    -webkit-animation: ccircle 60s infinite linear;    
+}
+
+.counterrotate-4 {
+    position: absolute;
+    bottom: 0;
+    width: 72px;
+    height: 72px;
+    -webkit-animation: ccircle 60s infinite linear;    
+}
+
+.first_icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    -webkit-transform: scaleX(0.5);    
+}
+
+.second_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    -webkit-transform: scaleX(0.5);    
+}
+
+.third_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    -webkit-transform: scaleX(0.5);    
+}
+
+.fourth_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    -webkit-transform: scaleX(0.5);    
+}
+
+    
+@-webkit-keyframes circle {
+    from {-webkit-transform: rotateZ(0deg)}
+    to {-webkit-transform: rotateZ(360deg)}
+}
+
+@-webkit-keyframes ccircle {
+    from {-webkit-transform: rotateZ(360deg)}
+    to {-webkit-transform: rotateZ(0deg)}
+}

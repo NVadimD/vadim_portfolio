@@ -1,0 +1,38 @@
+.languege-switch-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn__selection-arrow {
+    transition: all 0.5s;
+
+    &.active {
+        transform: rotate(180deg);
+    }
+}
+
+.languages_list {
+
+    padding: 14px 0;
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.btn__current_lang-name {
+    width: 80px;
+    display: flex;
+    
+}
+
+
+.languages_list__btn {
+    display: flex;
+    gap: 10px;
+}

@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vadim_portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header__container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vadim_portfolio</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="./js/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                
+                <div class="header__top-row">
 
-            <div class="header__top-row">
-                <nav class="header__nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">About me</li>
-                        <li class="nav__item">Stack & tools</li>
-                        <li class="nav__item">Projects</li>
-                        <li class="nav__item">Contacts</li>
-                    </ul>
-                </nav>
-                <div class="header__language-switch-box">
-                    <select name="language">
-                        <option value="english">English</option>
-                        <option value="russian">Russian</option>
-                    </select>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">About me</li>
+                            <li class="nav__item">Stack & tools</li>
+                            <li class="nav__item">Projects</li>
+                            <li class="nav__item">Contacts</li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__language-switch-box">
+
+                        <button class="languege-switch-btn">
+                            <img
+                                src="./img/en_icon.svg"
+                                alt="english-flag"
+                                class="btn__current_lang-ico"
+                            />
+
+                            <span class="btn__current_lang-name">English</span>
+
+                            <svg class="btn__selection-arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5997 7.99408C15.9251 8.31951 15.9251 8.84715 15.5997 9.17259L11.0163 13.7559C10.6909 14.0814 10.1633 14.0814 9.83783 13.7559L5.2545 9.17259C4.92906 8.84715 4.92906 8.31951 5.2545 7.99408C5.57993 7.66864 6.10757 7.66864 6.43301 7.99408L10.4271 11.9882L14.4212 7.99408C14.7466 7.66864 15.2742 7.66864 15.5997 7.99408Z" fill="#EBEBEB"/>
+                            </svg>
+                        </button>
+
+                        <ul class="languages_list">
+                            <li>
+                                <button class="languages_list__btn">
+                                    <img
+                                        src="./img/ru_icon.svg"
+                                        alt="russian-flag"
+                                        class="btn__option_lang-ico"
+                                    />
+        
+                                    <span class="btn__option_lang-name">Russian</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
                 </div>
-            </div>
 
-            <div class="header__content">
-                <h1 class="header__title title">
-                    <span class="subtle">Hi, my name is</span> Vadim
-                </h1>
-                <p class="header__text">
-                    I'm a Frontend developer. Welcome to my portfolio page! 
-                    Let's get acquainted
-                </p>
-            </div>
+                <div class="header__content">
+                    <h1 class="header__title title">
+                        <span class="subtle">Hi, my name is</span> Vadim
+                    </h1>
+                    <p class="header__text">
+                        I'm a Frontend developer. Welcome to my portfolio page!
+                        Let's get acquainted
+                    </p>
+                </div>
 
-        </div>
-    </header>
-</body>
+                <div class="animation-field">
+                    <div class="deform">
+                        <div class="rotate">
+                            <div class="counterrotate">
+                                <img class="first_icon" src="./img/techIcon/js_icon.png" alt="js-icon">
+                            </div>
+                            <div class="counterrotate-2">
+                                <img class="second_icon" src="./img/techIcon/html_icon.png" alt="html-icon">
+                            </div>
+                            <div class="counterrotate-3">
+                                <img class="third_icon" src="./img/techIcon/css_icon.png" alt="css-icon">
+                            </div>
+                            <div class="counterrotate-4">
+                                <img class="fourth_icon" src="./img/techIcon/react_icon.png" alt="react-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </body>
 </html>
