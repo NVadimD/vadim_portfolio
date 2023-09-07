@@ -285,6 +285,8 @@ body {
   width: 380px;
   height: 380px;
   -webkit-transform: scaleX(2);
+  -ms-transform: scaleX(2);
+      transform: scaleX(2);
   left: 40%;
   position: absolute;
   top: 32%;
@@ -295,7 +297,10 @@ body {
   width: 100%;
   height: 100%;
   -webkit-animation: circle 60s infinite linear;
+  animation: circle 60s infinite linear;
   -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
 }
 
 .counterrotate {
@@ -305,6 +310,7 @@ body {
   width: 72px;
   height: 72px;
   -webkit-animation: ccircle 60s infinite linear;
+  animation: ccircle 60s infinite linear;
 }
 
 .counterrotate-2 {
@@ -313,6 +319,7 @@ body {
   width: 72px;
   height: 72px;
   -webkit-animation: ccircle 60s infinite linear;
+  animation: ccircle 60s infinite linear;
 }
 
 .counterrotate-3 {
@@ -321,6 +328,7 @@ body {
   width: 72px;
   height: 72px;
   -webkit-animation: ccircle 60s infinite linear;
+  animation: ccircle 60s infinite linear;
 }
 
 .counterrotate-4 {
@@ -329,6 +337,7 @@ body {
   width: 72px;
   height: 72px;
   -webkit-animation: ccircle 60s infinite linear;
+  animation: ccircle 60s infinite linear;
 }
 
 .first_icon {
@@ -337,6 +346,8 @@ body {
   top: 0px;
   display: block;
   -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+      transform: scaleX(0.5);
 }
 
 .second_icon {
@@ -345,6 +356,8 @@ body {
   top: 0;
   display: block;
   -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+      transform: scaleX(0.5);
 }
 
 .third_icon {
@@ -353,6 +366,8 @@ body {
   top: 0;
   display: block;
   -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+      transform: scaleX(0.5);
 }
 
 .fourth_icon {
@@ -361,6 +376,8 @@ body {
   top: 0;
   display: block;
   -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+      transform: scaleX(0.5);
 }
 
 @-webkit-keyframes circle {
@@ -371,7 +388,23 @@ body {
     -webkit-transform: rotateZ(360deg);
   }
 }
+@keyframes circle {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
 @-webkit-keyframes ccircle {
+  from {
+    -webkit-transform: rotateZ(360deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+@keyframes ccircle {
   from {
     -webkit-transform: rotateZ(360deg);
   }
