@@ -1,6 +1,10 @@
 .nav__list {
     display: flex;
     gap: 36px;
+    
+    @media screen and (width <= 1366px) {
+        gap: 22px;
+    }
 }
 
 .nav__item {

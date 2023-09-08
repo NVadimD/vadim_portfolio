@@ -9,10 +9,16 @@ body {
     font-family: $reg;
     color: $main;
     font-size: 22px;
+    @media screen and (width <= 1366px) {
+        font-size: 18px;
+    }
 }
 
 .title {
     font-weight: 700;
     font-size: 46px;
     line-height: 1.21;
+    @media screen and (width <= 1366px) {
+        font-size: 36px;
+    }
 }

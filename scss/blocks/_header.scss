@@ -17,7 +17,7 @@
     position: relative;
 
     display: flex;
-    gap: 48px;
+    gap: 36px;
     justify-content: center;
     margin-bottom: 52px;
     z-index: 5;
@@ -26,7 +26,7 @@
 .header__language-switch-box {
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 0;
     color: $secondary;
 }
 

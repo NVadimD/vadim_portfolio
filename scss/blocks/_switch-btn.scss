@@ -10,6 +10,9 @@
     &.active {
         transform: rotate(180deg);
     }
+    @media screen and (width <= 1366px) {
+        margin-left: -20px;
+    }
 }
 
 .languages_list {
@@ -23,6 +26,7 @@
     &.active {
         display: flex;
     }
+
 }
 
 .btn__current_lang-name {
