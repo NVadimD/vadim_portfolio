@@ -2,8 +2,14 @@
     font-family: 'HelveticaNeue-Regular';
     src:url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.woff2') format('woff2'),
         url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.woff') format('woff'),
-        url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.ttf')  format('truetype')
+        url('../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.ttf')  format('truetype'); 
 }
+
+@font-face {
+    font-family: 'SF-Distant-Galaxy';
+    src:url('../fonts/sfdistantgalaxycyrillic.ttf')  format('truetype');
+}   
+
 
 body {
     font-family: $reg;

@@ -111,6 +111,10 @@ legend {
   font-family: "HelveticaNeue-Regular";
   src: url("../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeue-Regular/HelveticaNeueCyr-Roman.ttf") format("truetype");
 }
+@font-face {
+  font-family: "SF-Distant-Galaxy";
+  src: url("../fonts/sfdistantgalaxycyrillic.ttf") format("truetype");
+}
 body {
   font-family: "HelveticaNeue-Regular";
   color: rgba(238, 238, 238, 0.9568627451);
@@ -705,18 +709,57 @@ body {
   background-image: url(../../img/about_bg.jpg);
   background-size: cover;
   overflow: hidden;
+  font-size: 32px;
 }
 
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.about_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 16px;
+  padding-bottom: 40px;
 }
 
 .about__content {
-  width: 60%;
+  width: 62%;
+  padding-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 120px;
+}
+
+.content__info ul li {
+  margin-bottom: 10px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.quote-box__quote {
+  font-family: "SF-Distant-Galaxy";
+  font-size: 44px;
+  margin-bottom: 20px;
 }
 
 .about__avatar {
-  width: 40%;
+  width: 38%;
 }

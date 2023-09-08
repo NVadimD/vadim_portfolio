@@ -3,16 +3,49 @@
     background-image: url(../../img/about_bg.jpg);
     background-size: cover;
     overflow: hidden;
+
+    font-size: 32px;
 }
 
 .about__container {
     display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about_wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+
+    padding-bottom: 40px;
 }
 
 .about__content {
-    width: 60%;
+    width: 62%;
+    padding-bottom: 38px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
 
+.content__info ul li {
+    margin-bottom: 10px;
+}
+
+.about__title {
+    margin-bottom: 20px;
+}
+
+.quote-box__quote {
+    font-family: $special;
+    font-size: 44px;
+
+    margin-bottom: 20px;
+}
+
+
 .about__avatar {
-    width: 40%;
+    width: 38%;
 }
