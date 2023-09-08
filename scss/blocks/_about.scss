@@ -1,6 +1,18 @@
 .about {
     height: 100vh;
-    background-image: url();
+    background-image: url(../../img/about_bg.jpg);
     background-size: cover;
     overflow: hidden;
+}
+
+.about__container {
+    display: flex;
+}
+
+.about__content {
+    width: 60%;
+}
+
+.about__avatar {
+    width: 40%;
 }
