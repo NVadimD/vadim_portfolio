@@ -122,6 +122,12 @@ body {
   }
 }
 
+.container {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
 .title {
   font-weight: 700;
   font-size: 46px;
@@ -139,12 +145,6 @@ body {
   background-image: url(../img/header_bg.jpg);
   background-size: cover;
   overflow: hidden;
-}
-
-.header__container {
-  max-width: 1176px;
-  margin: 0 auto;
-  padding: 32px;
 }
 
 .header__top-row {
@@ -698,4 +698,10 @@ body {
               transform: scaleX(0.55) scaleY(1.1);
     }
   }
+}
+.about {
+  height: 100vh;
+  background-image: url();
+  background-size: cover;
+  overflow: hidden;
 }
