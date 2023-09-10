@@ -3,8 +3,6 @@
     background-image: url(../../img/about_bg.jpg);
     background-size: cover;
     overflow: hidden;
-
-    font-size: 32px;
 }
 
 .about__container {
@@ -19,6 +17,11 @@
     gap: 16px;
 
     padding-bottom: 40px;
+
+    
+    @media screen and (width <= 1366px) {
+        justify-content: space-around;
+    }
 }
 
 .about__content {
@@ -28,6 +31,12 @@
     display: flex;
     flex-direction: column;
     gap: 120px;
+
+    @media screen and (width <= 1366px) {
+        width: max-content;
+        padding-bottom: 88px;
+        padding-left: 80px;
+    }
 }
 
 .content__info ul li {
@@ -43,9 +52,21 @@
     font-size: 44px;
 
     margin-bottom: 20px;
+
+    @media screen and (width <= 1366px) {
+        font-size: 32px;
+    }
 }
 
 
 .about__avatar {
     width: 38%;
+
+    @media screen and (width <= 1366px) {
+        padding: 50px;
+    }
+
+    @media screen and (width <= 1126px) {
+        padding: 20px;
+    }
 }

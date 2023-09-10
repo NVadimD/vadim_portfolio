@@ -11,17 +11,27 @@
     position: relative;
 
     display: flex;
-    gap: 36px;
+    gap: 32px;
+    font-size: 24px;
     justify-content: center;
     margin-bottom: 52px;
     z-index: 5;
+
+    @media screen and (width <= 1366px) {
+        font-size: 18px;
+    }
 }
 
 .header__language-switch-box {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -34px;
+    top: 5px;
     color: $secondary;
+
+    @media screen and (width <= 1366px) {
+        right: 0;
+        top: 2px;
+    }
 }
 
 .header__content {
@@ -30,19 +40,15 @@
     left: 50%;
     transform: translate(-50%, -54%);
     
-    max-width: 610px;
+    max-width: 660px;
     margin: 0 auto;
     padding: 10px 15px;
     text-align: center;
     z-index: 5;
     cursor: default;
-}
 
-.header__title {
-    margin-bottom: 20px;
-}
-
-.subtle {
-    font-weight: 400;
+    @media screen and (width <= 1366px) {
+        max-width: 420px;
+    }
 }
 

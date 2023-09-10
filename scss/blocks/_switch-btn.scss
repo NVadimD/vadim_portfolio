@@ -1,17 +1,18 @@
 .languege-switch-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .btn__selection-arrow {
     transition: all 0.5s;
+    margin-left: 10px;
 
     &.active {
         transform: rotate(180deg);
     }
     @media screen and (width <= 1366px) {
-        margin-left: -20px;
+        margin-left: -4px;
     }
 }
 

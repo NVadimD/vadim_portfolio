@@ -14,7 +14,7 @@
 body {
     font-family: $reg;
     color: $main;
-    font-size: 22px;
+    font-size: 30px;
     @media screen and (width <= 1366px) {
         font-size: 18px;
     }
@@ -32,6 +32,8 @@ body {
     font-size: 46px;
     line-height: 1.21;
     letter-spacing: 2px;
+    margin-bottom: 20px;
+    
     @media screen and (width <= 1366px) {
         font-size: 36px;
     }
