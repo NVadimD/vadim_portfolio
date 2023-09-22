@@ -1,0 +1,22 @@
+.projects {
+    height: 100vh;
+    background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(0, 69, 103, 0.2) 0%,
+            rgba(64, 20, 55, 0.2) 99.94%
+        ),
+        #002749;
+        overflow: hidden;
+}
+
+.projects__title {
+    text-align: center;
+}
+
+.projects__box {
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 100px 188px 230px;
+    width: calc(100% - 376px);
+    height: 64vh;
+}
