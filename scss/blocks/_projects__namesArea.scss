@@ -1,0 +1,29 @@
+.projects__namesArea {
+    // border: 1px solid red;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.project-list__name {
+    color: rgba(196, 196, 196, 0.50);
+    margin-bottom: 10px;
+    transition: all 0.2s;
+
+    &.active {
+        color: $interactive;
+        &:hover {
+            color: $interactive;
+        }
+    }
+
+    &:hover {
+        color: rgba(196, 196, 196, 0.84);
+        cursor: pointer;
+    }
+
+    &:active {
+        color: rgba(196, 196, 196, 0.66);
+        cursor: pointer;
+    }
+}
+

@@ -13,10 +13,10 @@
     text-align: center;
 }
 
-.projects__box {
-    border: 1px solid red;
-    box-sizing: border-box;
-    margin: 100px 188px 230px;
-    width: calc(100% - 376px);
-    height: 64vh;
+.projects__content {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
 }
