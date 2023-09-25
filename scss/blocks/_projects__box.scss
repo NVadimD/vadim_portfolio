@@ -1,5 +1,5 @@
 .projects__box {
-    border: 1px solid red;
+    // border: 1px solid red;
     box-sizing: border-box;
     margin: 100px 14px 230px;
     width: calc(100% - 376px);
@@ -7,7 +7,7 @@
 }
 
 .box__main-row {
-    border: 1px solid rgb(248, 47, 255);
+    // border: 1px solid rgb(248, 47, 255);
     margin: 0 auto 20px;
     width: 100%;
     height: calc(100% - 56px);
@@ -17,16 +17,9 @@
     align-items: center;
 }
 
-.main-row__left-arrow {
-    width: 45px;
-    height: 45px;
-    border: 1px solid blue;
-}
-
 .main-row__arrow {
     width: 45px;
     height: 45px;
-    border: 1px solid blue;
 
     & g:hover path {
         fill-opacity: 0.9;
@@ -39,16 +32,3 @@
         cursor: pointer;
     }
 }
-
-.main-row__content {
-    border: 1px solid greenyellow;
-    width: calc(100% - 120px);
-    height: 100%;
-
-    border-radius: 12px;
-    padding: 20px;
-    color: $secondary;
-    background: rgba(217, 217, 217, 0.20);
-}
-
-
