@@ -1,5 +1,4 @@
 .projects__namesArea {
-    // border: 1px solid red;
     padding: 20px;
     margin-bottom: 200px;
 }
@@ -8,6 +7,11 @@
     color: rgba(196, 196, 196, 0.50);
     margin-bottom: 10px;
     transition: all 0.2s;
+    font-size: 30px;
+
+    @media screen and (width <= 1366px) {
+        font-size: 20px;
+    }
 
     &.active {
         color: $interactive;

@@ -2,8 +2,12 @@
     // border: 1px solid red;
     box-sizing: border-box;
     margin: 100px 14px 230px;
-    width: calc(100% - 376px);
+    width: calc(100% - 306px);
     height: 64vh;
+    @media screen and (height <= 960px) {
+        height: 72vh;
+        margin: 60px 14px;
+    }
 }
 
 .box__main-row {
