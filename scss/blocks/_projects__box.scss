@@ -3,10 +3,10 @@
     box-sizing: border-box;
     margin: 100px 14px 230px;
     width: calc(100% - 306px);
-    height: 64vh;
+    height: 70vh;
     @media screen and (height <= 960px) {
         height: 72vh;
-        margin: 60px 14px;
+        margin: 48px 14px;
     }
 }
 
