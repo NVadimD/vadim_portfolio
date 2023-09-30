@@ -1,0 +1,29 @@
+.footer {
+    background: radial-gradient(74.86% 73.86% at 13.26% 100%, #200152 6.04%, #151035 100%);
+    color: $main;
+}
+
+a {
+    color: inherit;
+}
+
+.contact-list {
+    padding: 20px 0;
+
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.list__item img {
+    width: 40px;
+}
+
+.contact-display {
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
