@@ -233,18 +233,22 @@ body {
   -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.1);
           box-shadow: 0 2px 1px rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .nav__item:hover {
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, rgba(255, 255, 255, 0.8)), to(#fff));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 8.85%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, rgb(184, 191, 255)), to(#cadcff));
+  background: linear-gradient(180deg, rgb(184, 191, 255) 8.85%, #cadcff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(0px 0px 17px rgb(1, 5, 255));
+  filter: drop-shadow(0px 0px 18px rgb(0, 0, 255));
   border-radius: 20px;
-  -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.4);
-          box-shadow: 0 2px 1px rgba(255, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 2px 1px rgba(21, 17, 255, 0.2);
+          box-shadow: 0 2px 1px rgba(21, 17, 255, 0.2);
+  border-bottom: 1px solid rgba(183, 196, 255, 0.3);
 }
 .nav__item:active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, rgb(255, 255, 255)), to(#fff));
@@ -815,7 +819,8 @@ body {
 
 .stack {
   height: 100vh;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 69, 103, 0.2) 0%, rgba(64, 20, 55, 0.2) 99.94%), #002749;
+  background: -webkit-gradient(linear, left top, right top, from(#004C79), color-stop(#004868), color-stop(#00304D), color-stop(#00183B), to(#0a0c2c));
+  background: linear-gradient(to right, #004C79, #004868, #00304D, #00183B, #0a0c2c);
   overflow: hidden;
 }
 
@@ -890,7 +895,8 @@ body {
 
 .projects {
   height: 100vh;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 69, 103, 0.2) 0%, rgba(64, 20, 55, 0.2) 99.94%), #002749;
+  background: -webkit-gradient(linear, left top, right top, from(#004C79), color-stop(#004868), color-stop(#00304D), color-stop(#00183B), to(#0a0c2c));
+  background: linear-gradient(to right, #004C79, #004868, #00304D, #00183B, #0a0c2c);
   overflow: hidden;
 }
 
@@ -1090,20 +1096,32 @@ body {
 .openPrj-btn {
   font-size: 26px;
   margin: 8px 0 16px;
-  padding: 10px 26px;
-  border: 1px solid blue;
-  background: #3227c4;
-  border-radius: 18px;
+  padding: 16px 26px;
+  border: 2px solid rgb(218, 218, 218);
+  background: radial-gradient(160.53% 160.53% at 50% 161.97%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.16) 53.64%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 16px;
   cursor: pointer;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
 @media screen and (width <= 1366px), (height <= 1000px) {
   .openPrj-btn {
     font-size: 18px;
   }
 }
+.openPrj-btn:hover {
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  -webkit-filter: drop-shadow(0px 0px 2px rgb(85, 139, 146));
+  filter: drop-shadow(0px 0px 2px rgb(85, 139, 146));
+}
+.openPrj-btn:active {
+  opacity: 0.6;
+}
 
 .footer {
-  background: radial-gradient(74.86% 73.86% at 13.26% 100%, #200152 6.04%, #151035 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1c3150), to(#001029));
+  background: linear-gradient(to right, #1c3150, #001029);
   color: rgba(238, 238, 238, 0.9568627451);
 }
 

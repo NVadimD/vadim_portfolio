@@ -1,12 +1,7 @@
 .projects {
     height: 100vh;
-    background: radial-gradient(
-            50% 50% at 50% 50%,
-            rgba(0, 69, 103, 0.2) 0%,
-            rgba(64, 20, 55, 0.2) 99.94%
-        ),
-        #002749;
-        overflow: hidden;
+    background: linear-gradient(to right, #004C79, #004868, #00304D, #00183B, #0a0c2c);
+    overflow: hidden;
 }
 
 .projects__title {

@@ -56,13 +56,28 @@
 .openPrj-btn {
     font-size: 26px;
     margin: 8px 0 16px;
-    padding: 10px 26px;
-    border: 1px solid blue;
-    background: #3227c4;
-    border-radius: 18px;
+    padding: 16px 26px;
+    border: 2px solid rgb(218, 218, 218);
+    background: radial-gradient(160.53% 160.53% at 50% 161.97%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.16) 53.64%, rgba(255, 255, 255, 0.00) 100%);
+    border-radius: 16px;
     cursor: pointer;
+
+    transition: all 0.15s ease-in;
+
     @media screen and (width <= 1366px), (height <= 1000px) {
         font-size: 18px;
+    }
+
+    &:hover {
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+        // background: rgba($color: #2116b9, $alpha: 0.2);
+        -webkit-filter: drop-shadow(0px 0px 2px rgb(85, 139, 146));
+        filter: drop-shadow(0px 0px 2px rgb(85, 139, 146));
+    }
+
+    &:active {
+        opacity: 0.6;
     }
 }
 

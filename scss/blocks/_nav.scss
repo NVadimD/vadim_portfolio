@@ -24,20 +24,24 @@
     box-shadow: 0 2px 1px rgba($color: #ffffff, $alpha: 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
+    transition: all 0.2s ease-in;
+
     &:hover {
         cursor: pointer;
         background: linear-gradient(
             180deg,
-            rgba(255, 255, 255, 0.8) 8.85%,
-            #fff 100%
+            rgb(184, 191, 255) 8.85%,
+            #cadcff 100%
         );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-filter: drop-shadow(0px 0px 17px rgb(1, 5, 255));
+        filter: drop-shadow(0px 0px 18px rgb(0, 0, 255));
 
         border-radius: 20px;
-        box-shadow: 0 2px 1px rgba($color: #ffffff, $alpha: 0.4);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 1px rgba($color: #1511ff, $alpha: 0.2);
+        border-bottom: 1px solid rgba(183, 196, 255, 0.3);
     }
 
     &:active {
