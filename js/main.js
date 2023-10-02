@@ -1,4 +1,6 @@
-// Переменнве для смены языка
+// ------------------------------------------Change language-----------------------------------------------
+
+
 const switchBtn = document.querySelector('.languege-switch-btn');
 const switchBtnArrow = document.querySelector('.btn__selection-arrow');
 const languageList = document.querySelector('.languages_list');
@@ -27,3 +29,35 @@ secondLanguageBtn.addEventListener('click', () => {
     switchBtnArrow.classList.remove('active');
     languageList.classList.remove('active');
 })
+
+
+
+
+// --------------------------------------Navigation---------------------------------------
+
+const anchors = Array.from(document.querySelectorAll('.nav__item'));
+
+anchors.forEach(item => item.addEventListener('click', () => {
+    const id = item.getAttribute('data-anchors');
+    const position = document.getElementById(id);
+
+    window.scroll({
+        top: position.offsetTop,
+        behavior: 'smooth'
+    })
+}))
+
+
+
+// ----------------------------------------Projects------------------------------------------
+
+const projectsNames = Array.from(document.querySelectorAll('.project-list__name'));
+
+projectsNames.forEach(item => item.addEventListener('click', () => {
+    if (item.classList.contains('active')) {
+        return false;
+    } else {
+        projectsNames.forEach(item => item.classList.remove('active'));
+        item.classList.add('active');
+    }
+}))
