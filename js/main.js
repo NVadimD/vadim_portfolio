@@ -1,4 +1,4 @@
-// ------------------------------------------Change language-----------------------------------------------
+// ------------------------------------Change language switcher-------------------------------------------
 
 
 const switchBtn = document.querySelector('.languege-switch-btn');
