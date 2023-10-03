@@ -52,12 +52,59 @@ anchors.forEach(item => item.addEventListener('click', () => {
 // ----------------------------------------Projects------------------------------------------
 
 const projectsNames = Array.from(document.querySelectorAll('.project-list__name'));
+const projectsCards = Array.from(document.querySelectorAll('.main-part'));
+const projectsMarks = Array.from(document.querySelectorAll('.navigation__element'));
+
+function changeActiveProject(ind) {
+    projectsNames.forEach(item => item.classList.remove('active'));
+    projectsCards.forEach(item => item.classList.remove('active'));
+    projectsMarks.forEach(item => item.classList.remove('active'));
+
+    projectsNames[ind].classList.add('active');
+    projectsCards[ind].classList.add('active');
+    projectsMarks[ind].classList.add('active');
+}
 
 projectsNames.forEach(item => item.addEventListener('click', () => {
     if (item.classList.contains('active')) {
         return false;
     } else {
-        projectsNames.forEach(item => item.classList.remove('active'));
-        item.classList.add('active');
+        const ind = projectsNames.indexOf(item);
+        changeActiveProject(ind);
     }
 }))
+
+projectsMarks.forEach(item => item.addEventListener('click', () => {
+    if (item.classList.contains('active')) {
+        return false;
+    } else {
+        const ind = projectsMarks.indexOf(item);
+        changeActiveProject(ind);
+    }
+}))
+
+
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+
+leftArrow.addEventListener('click', () => {
+    let ind = projectsNames.findIndex(item => item.classList.contains('active'));
+    if (ind === 0) {
+        ind = projectsNames.length - 1;
+        changeActiveProject(ind);
+    } else {
+        ind -= 1;
+        changeActiveProject(ind);
+    }
+})
+
+rightArrow.addEventListener('click', () => {
+    let ind = projectsNames.findIndex(item => item.classList.contains('active'));
+    if (ind === projectsNames.length - 1) {
+        ind = 0;
+        changeActiveProject(ind);
+    } else {
+        ind += 1;
+        changeActiveProject(ind);
+    }
+})
