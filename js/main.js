@@ -108,3 +108,37 @@ rightArrow.addEventListener('click', () => {
         changeActiveProject(ind);
     }
 })
+
+
+
+// ----------------------------------------Contacts------------------------------------------
+const githubIcon = document.getElementById('github');
+const telegramIcon = document.getElementById('telegram');
+const whatsappIcon = document.getElementById('whatsapp');
+const emailIcon = document.getElementById('email');
+
+const githubDisplay = document.querySelector('.github-display');
+const telegramDisplay = document.querySelector('.telegram-display');
+const whatsappDisplay = document.querySelector('.whatsapp-display');
+const emailDisplay = document.querySelector('.email-display');
+
+
+const showDisplay = (displayName) => {
+    displayName.classList.add('active');
+}
+
+const hideDisplay = (displayName) => {
+    displayName.classList.remove('active');
+}
+
+githubIcon.addEventListener('mouseenter', () => showDisplay(githubDisplay));
+githubIcon.addEventListener('mouseleave', () => hideDisplay(githubDisplay));
+
+telegramIcon.addEventListener('mouseenter', () => showDisplay(telegramDisplay));
+telegramIcon.addEventListener('mouseleave', () => hideDisplay(telegramDisplay));
+
+whatsappIcon.addEventListener('mouseenter', () => showDisplay(whatsappDisplay));
+whatsappIcon.addEventListener('mouseleave', () => hideDisplay(whatsappDisplay));
+
+emailIcon.addEventListener('mouseenter', () => showDisplay(emailDisplay));
+emailIcon.addEventListener('mouseleave', () => hideDisplay(emailDisplay));

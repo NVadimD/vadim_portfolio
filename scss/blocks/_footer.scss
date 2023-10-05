@@ -1,5 +1,4 @@
 .footer {
-    // background: #0e0537;
     background: linear-gradient(to right, #1c3150, #001029);
     color: $main;
 }
@@ -35,15 +34,34 @@ a {
     }
 }
 
-.contact-display {
-    height: 40px;
+.contact-display-box {
+    position: relative;    
+    height: 30px;
+    overflow: hidden;
     text-align: center;
-    padding: 10px 0 0;
+    padding: 6px 0 0;
     font-size: 18px;
     opacity: 0.88;
 
     @media screen and (width <= 1366px) {
         font-size: 14px;
+        height: 26px;
     }
 }
 
+.contact-display-item {
+    position: absolute;    
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
+
+}
