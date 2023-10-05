@@ -990,7 +990,7 @@ body {
   cursor: pointer;
 }
 .project-list__name:active {
-  color: rgba(196, 196, 196, 0.66);
+  color: rgba(196, 196, 196, 0.46);
   cursor: pointer;
 }
 
@@ -1024,6 +1024,7 @@ body {
 }
 
 .main-row__content {
+  position: relative;
   width: calc(100% - 108px);
   height: 100%;
   display: -webkit-box;
@@ -1091,15 +1092,25 @@ body {
 .content__text {
   font-size: 26px;
   margin-top: 10px;
+  max-height: 48%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.content__text::-webkit-scrollbar {
+  width: 12px;
 }
 @media screen and (width <= 1366px), (height <= 1000px) {
   .content__text {
     font-size: 18px;
     margin-top: 4px;
+    max-height: 40%;
   }
 }
 
 .openPrj-btn {
+  position: absolute;
+  bottom: 20px;
   font-size: 26px;
   margin: 8px 0 16px;
   padding: 16px 26px;
