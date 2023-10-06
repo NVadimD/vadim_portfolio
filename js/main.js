@@ -25,11 +25,41 @@ secondLanguageBtn.addEventListener('click', () => {
     currentLngIcon.src = optionLngIcon.src;
     optionLng.innerHTML = temroraryLngMemo;
     optionLngIcon.src = temroraryIconMemo;
+    toggleLanguage();
 
     switchBtnArrow.classList.remove('active');
     languageList.classList.remove('active');
 })
 
+
+
+// ------------------------------------Change language realization-------------------------------------------
+
+const translations = {
+    'en': {
+        'header_title': 'Hi, my name is Vadim',
+        'header_text': "I'm a Frontend developer. Welcome to my portfolio page. Let's get acquainted!"
+    },
+    'ru': {
+        'header_title': 'Привет, я Вадим',
+    'header_text': "Добро пожаловать на мою страницу-портфолио. Давайте знакомиться!"
+    }
+};
+
+let currentLanguage = 'en';
+
+function toggleLanguage() {
+    currentLanguage = (currentLanguage === 'en') ? 'ru' : 'en';
+    updateContent();
+}
+
+function updateContent() {
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        element.textContent = translations[currentLanguage][key];
+    });
+}
 
 
 
