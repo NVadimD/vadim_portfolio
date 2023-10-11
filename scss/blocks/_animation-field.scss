@@ -40,6 +40,13 @@
         left: 35%;
         top: 36%;
     }
+
+    @media screen and (width <= 760px) {
+        width: 220px;
+        height: 342px;
+        left: 14%;
+        top: 30%;
+    }
 }
 
 .rotate {
@@ -49,6 +56,12 @@
     animation: circle 100s infinite linear;    
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+
+    @media screen and (width <= 760px) {
+        -webkit-animation: circle 36s infinite linear;
+        animation: circle 36s infinite linear;   
+        transform-origin: 50% 50%;
+    }
 }
 
 .counterrotate {
@@ -59,6 +72,10 @@
     height: 72px;
     -webkit-animation: ccircle 100s infinite linear;
     animation: ccircle 100s infinite linear;
+
+    @media screen and (width <= 760px) {
+        animation: ccircle 36s infinite linear;
+    }
 }
 
 .counterrotate-2 {
@@ -67,7 +84,11 @@
     width: 72px;
     height: 72px;
     -webkit-animation: ccircle 100s infinite linear;
-    animation: ccircle 100s infinite linear;    
+    animation: ccircle 100s infinite linear;
+
+    @media screen and (width <= 760px) {
+        animation: ccircle 36s infinite linear;
+    }    
 }
 
 .counterrotate-3 {
@@ -76,7 +97,11 @@
     width: 72px;
     height: 72px;
     -webkit-animation: ccircle 100s infinite linear;
-    animation: ccircle 100s infinite linear;    
+    animation: ccircle 100s infinite linear; 
+    
+    @media screen and (width <= 760px) {
+        animation: ccircle 36s infinite linear;
+    } 
 }
 
 .counterrotate-4 {
@@ -85,7 +110,11 @@
     width: 72px;
     height: 72px;
     -webkit-animation: ccircle 100s infinite linear;
-    animation: ccircle 100s infinite linear;    
+    animation: ccircle 100s infinite linear;   
+
+    @media screen and (width <= 760px) {
+        animation: ccircle 36s infinite linear;
+    } 
 }
 
 .first_icon {
