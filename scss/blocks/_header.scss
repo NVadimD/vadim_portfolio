@@ -20,6 +20,10 @@
     @media screen and (width <= 1366px) {
         font-size: 18px;
     }
+
+    @media screen and (width <= 1000px) {
+        justify-content: space-between;
+    }
 }
 
 .header__language-switch-box {

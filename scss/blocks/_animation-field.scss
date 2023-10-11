@@ -33,6 +33,13 @@
         height: 320px;
         left: 36%;
     }
+
+    @media screen and (width <= 1000px) {
+        width: 236px;
+        height: 320px;
+        left: 35%;
+        top: 36%;
+    }
 }
 
 .rotate {
@@ -255,6 +262,59 @@
         }
         100% {
             transform: scaleX(0.55) scaleY(1.1);
+        }
+    }
+}
+
+
+
+@media screen and (width <= 1000px) {
+
+    @keyframes scaleAnimation1 {
+        0% {
+            transform: scaleX(0.18) scaleY(0.36);
+        }
+        50% {
+            transform: scaleX(0.36) scaleY(0.72);
+        }
+        100% {
+            transform: scaleX(0.18) scaleY(0.36);
+        }
+    }
+
+    @keyframes scaleAnimation2 {
+        0% {
+            transform: scaleX(0.3) scaleY(0.6);
+        }
+        50% {
+            transform: scaleX(0.18) scaleY(0.36);
+        }
+        100% {
+            transform: scaleX(0.3) scaleY(0.6);
+        }
+    }
+
+    @keyframes scaleAnimation3 {
+        0% {
+            transform: scaleX(0.3) scaleY(0.6);
+        }
+        50% {
+            transform: scaleX(0.18) scaleY(0.36);
+        }
+        100% {
+            transform: scaleX(0.3) scaleY(0.68);
+        }
+    }
+
+    @keyframes scaleAnimation4 {
+        0% {
+            transform: scaleX(0.4) scaleY(0.8);
+        }
+        50% {
+            transform: scaleX(0.7) scaleY(1.4);
+        }
+        100% {
+            transform: scaleX(0.4) scaleY(0.8);
         }
     }
 }

@@ -25,6 +25,10 @@
     @media screen and (height < 900px) {
         height: 76vh;
     }
+
+    @media screen and (width <= 1000px) {
+        height: 82vh;
+    }
 }
 
 .stack-box__item {

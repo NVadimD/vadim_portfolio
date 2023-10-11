@@ -1,17 +1,22 @@
 .projects__box {
-    // border: 1px solid red;
     box-sizing: border-box;
     margin: 100px 14px 230px;
     width: calc(100% - 306px);
     height: 70vh;
+
     @media screen and (height <= 960px) {
         height: 72vh;
         margin: 48px 14px;
     }
+
+    @media screen and (width <= 1000px) {
+        width: 92%;
+        height: 60vh;
+        margin: 40px 14px 60px;
+    }
 }
 
 .box__main-row {
-    // border: 1px solid rgb(248, 47, 255);
     margin: 0 auto 20px;
     width: 100%;
     height: calc(100% - 56px);

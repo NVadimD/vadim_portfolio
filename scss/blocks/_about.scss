@@ -37,6 +37,10 @@
         padding-bottom: 88px;
         padding-left: 80px;
     }
+
+    @media screen and (width <= 1000px) {
+        max-width: 340px;
+    }
 }
 
 .content__info ul li {
@@ -56,6 +60,9 @@
     @media screen and (width <= 1366px) {
         font-size: 32px;
     }
+    @media screen and (width <= 1000px) {
+        font-size: 28px;
+    }
 }
 
 
@@ -69,6 +76,14 @@
     @media screen and (width <= 1126px) {
         padding: 20px;
     }
+
+    @media screen and (width <= 1000px) {
+        width: 46%;
+    }
+
+    // @media screen and (width <= 800px) {
+    //     width: 52%;
+    // }
 }
 
 

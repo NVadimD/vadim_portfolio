@@ -54,7 +54,7 @@
 .content__text {
     font-size: 26px;
     margin-top: 10px;
-    max-height: 48%;
+    max-height: 50%;
     
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -66,7 +66,11 @@
     @media screen and (width <= 1366px), (height <= 1000px) {
         font-size: 18px;
         margin-top: 4px;
-        max-height: 40%;
+        max-height: 44%;
+    }
+
+    @media screen and (width <= 1000px) {
+        max-height: 70%;
     }
 }
 

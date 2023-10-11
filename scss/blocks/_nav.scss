@@ -5,6 +5,11 @@
     @media screen and (width <= 1366px) {
         gap: 22px;
     }
+
+    @media screen and (width <= 1000px) {
+        margin-left: 30px;
+        font-size: 16px;
+    }
 }
 
 .nav__item {
