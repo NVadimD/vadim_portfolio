@@ -71,6 +71,15 @@ anchors.forEach(item => item.addEventListener('click', () => {
 }))
 
 
+const headerArrow = document.querySelector('.header__start-arrow');
+headerArrow.addEventListener('click', () => {
+    window.scroll({
+        top: document.getElementById('about').offsetTop,
+        behavior: 'smooth'
+    })
+})
+
+
 
 // ----------------------------------------Projects------------------------------------------
 
