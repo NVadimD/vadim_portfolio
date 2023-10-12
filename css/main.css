@@ -1208,6 +1208,7 @@ body {
 @media screen and (width <= 1000px) {
   .projects {
     min-height: 100vh;
+    height: auto;
   }
 }
 
@@ -1257,8 +1258,13 @@ body {
 @media screen and (width <= 1000px) {
   .projects__box {
     width: 92%;
-    height: 60vh;
+    height: 58vh;
     margin: 40px 14px 60px;
+  }
+}
+@media screen and (width <= 1366px) {
+  .projects__box {
+    margin: 12px 14px 36px;
   }
 }
 
@@ -1276,6 +1282,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (width <= 760px) {
+  .box__main-row {
+    min-height: 100%;
+  }
+}
 
 .main-row__arrow {
   width: 45px;
@@ -1291,10 +1302,20 @@ body {
   fill-opacity: 0.66;
   cursor: pointer;
 }
+@media screen and (width <= 760px) {
+  .main-row__arrow {
+    display: none;
+  }
+}
 
 .projects__namesArea {
   padding: 20px;
   margin-bottom: 200px;
+}
+@media screen and (width <= 760px) {
+  .projects__namesArea {
+    margin-bottom: 10px;
+  }
 }
 
 .project-list__name {
@@ -1307,6 +1328,11 @@ body {
 @media screen and (width <= 1366px) {
   .project-list__name {
     font-size: 20px;
+  }
+}
+@media screen and (width <= 760px) {
+  .project-list__name {
+    font-size: 16px;
   }
 }
 .project-list__name.active {
@@ -1376,6 +1402,12 @@ body {
   background: rgba(217, 217, 217, 0.2);
   overflow: hidden;
 }
+@media screen and (width <= 760px) {
+  .main-row__content {
+    width: 100%;
+    padding: 20px;
+  }
+}
 
 .main-part {
   max-height: 100%;
@@ -1409,6 +1441,12 @@ body {
     margin: 6px 0 18px;
   }
 }
+@media screen and (width <= 760px) {
+  .content__img {
+    height: 60px;
+    margin: 2px 0 12px;
+  }
+}
 
 .content__name {
   font-size: 36px;
@@ -1416,6 +1454,12 @@ body {
 @media screen and (width <= 1366px), (height <= 1000px) {
   .content__name {
     font-size: 28px;
+  }
+}
+@media screen and (width <= 760px) {
+  .content__name {
+    font-size: 20px;
+    margin-bottom: 6px;
   }
 }
 
@@ -1442,6 +1486,12 @@ body {
     max-height: 70%;
   }
 }
+@media screen and (width <= 760px) {
+  .content__text {
+    font-size: 14px;
+    max-height: 58%;
+  }
+}
 
 .openPrj-btn {
   position: absolute;
@@ -1460,6 +1510,14 @@ body {
   .openPrj-btn {
     font-size: 18px;
     padding: 10px 16px;
+  }
+}
+@media screen and (width <= 760px) {
+  .openPrj-btn {
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 8px;
+    bottom: 10px;
   }
 }
 .openPrj-btn:hover {
@@ -1496,6 +1554,11 @@ a {
           align-items: center;
   font-size: 18px;
 }
+@media screen and (width <= 1366px) {
+  .contact-list {
+    gap: 34px;
+  }
+}
 
 .list__item img {
   width: 46px;
@@ -1511,6 +1574,11 @@ a {
 @media screen and (width <= 1366px) {
   .list__item img {
     width: 40px;
+  }
+}
+@media screen and (width <= 760px) {
+  .list__item img {
+    width: 34px;
   }
 }
 

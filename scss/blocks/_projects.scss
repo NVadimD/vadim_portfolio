@@ -2,8 +2,10 @@
     height: 100vh;
     background: linear-gradient(to right, #004C79, #004868, #00304D, #00183B, #0a0c2c);
     overflow: hidden;
+    
     @media screen and (width <= 1000px) {
         min-height: 100vh;
+        height: auto;
     }
 }
 

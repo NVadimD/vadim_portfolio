@@ -11,9 +11,14 @@
 
     @media screen and (width <= 1000px) {
         width: 92%;
-        height: 60vh;
+        height: 58vh;
         margin: 40px 14px 60px;
     }
+
+    @media screen and (width <= 1366px) {
+        margin: 12px 14px 36px;
+    }
+
 }
 
 .box__main-row {
@@ -24,6 +29,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (width <= 760px) {
+        min-height: 100%;
+    }
 }
 
 .main-row__arrow {
@@ -39,5 +48,9 @@
     & g:active path {
         fill-opacity: 0.66;
         cursor: pointer;
+    }
+
+    @media screen and (width <= 760px) {
+        display: none;
     }
 }

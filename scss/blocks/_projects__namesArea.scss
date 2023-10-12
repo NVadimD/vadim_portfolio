@@ -1,6 +1,10 @@
 .projects__namesArea {
     padding: 20px;
     margin-bottom: 200px;
+
+    @media screen and (width <= 760px) {
+        margin-bottom: 10px;
+    }
 }
 
 .project-list__name {
@@ -12,6 +16,11 @@
     @media screen and (width <= 1366px) {
         font-size: 20px;
     }
+
+    @media screen and (width <= 760px) {
+        font-size: 16px;
+    }
+
 
     &.active {
         color: $interactive;

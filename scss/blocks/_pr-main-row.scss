@@ -15,6 +15,11 @@
     background: rgba(217, 217, 217, 0.20);
 
     overflow: hidden;
+
+    @media screen and (width <= 760px) {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .main-part {
@@ -42,12 +47,23 @@
         height: 82px;
         margin: 6px 0 18px;
     }
+
+    @media screen and (width <= 760px) {
+        height: 60px;
+        margin: 2px 0 12px;
+    }
 }
 
 .content__name {
     font-size: 36px;
+
     @media screen and (width <= 1366px), (height <= 1000px) {
         font-size: 28px;
+    }
+
+    @media screen and (width <= 760px) {
+        font-size: 20px;
+        margin-bottom: 6px;
     }
 }
 
@@ -72,6 +88,11 @@
     @media screen and (width <= 1000px) {
         max-height: 70%;
     }
+
+    @media screen and (width <= 760px) {
+        font-size: 14px;
+        max-height: 58%;
+    }
 }
 
 .openPrj-btn {
@@ -91,6 +112,14 @@
     @media screen and (width <= 1366px), (height <= 1000px) {
         font-size: 18px;
         padding: 10px 16px;
+    }
+
+    @media screen and (width <= 760px) {
+        font-size: 14px;
+        padding: 6px 8px;
+        border-radius: 8px;
+
+        bottom: 10px;
     }
 
     &:hover {
