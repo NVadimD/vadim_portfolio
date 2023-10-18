@@ -1075,7 +1075,7 @@ body {
 }
 .about {
   height: 100vh;
-  background-image: url(../../img/about_bg.jpg);
+  background-image: url(../img/about_bg.jpg);
   background-size: cover;
   overflow: hidden;
 }
