@@ -1,7 +1,7 @@
 import translations from "./translator.js";
 
 
-// ------------------------------------Change language switcher-------------------------------------------
+// ------------------------------------Change-language switcher-------------------------------------------
 
 
 const switchBtn = document.querySelector('.languege-switch-btn');
@@ -36,7 +36,7 @@ secondLanguageBtn.addEventListener('click', () => {
 
 
 
-// ------------------------------------Change language realization-------------------------------------------
+// ------------------------------------Change-language realization-------------------------------------------
 
 
 let currentLanguage = 'en';
