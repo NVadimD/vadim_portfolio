@@ -1,5 +1,7 @@
 import translations from "./translator.js";
 
+
+
 // ------------------------------------Change-language switcher-------------------------------------------
 
 const switchBtn = document.querySelector(".languege-switch-btn");
@@ -30,6 +32,10 @@ secondLanguageBtn.addEventListener("click", () => {
     languageList.classList.remove("active");
 });
 
+
+
+
+
 // ------------------------------------Change-language realization-------------------------------------------
 
 let currentLanguage = "en";
@@ -46,6 +52,11 @@ function updateContent() {
         element.textContent = translations[currentLanguage][key];
     });
 }
+
+
+
+
+
 
 // --------------------------------------Navigation---------------------------------------
 
@@ -70,6 +81,11 @@ headerArrow.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+
+
+
+
 
 // ----------------------------------------Projects------------------------------------------
 
@@ -159,6 +175,7 @@ openProjectBtn.addEventListener("click", function () {
     });
 });
 
+
 // -----------------------------------Projects-mobile-swipe------------------------------------------
 
 const projectBox = document.querySelector(".main-row__content");
@@ -201,7 +218,13 @@ projectBox.addEventListener("touchend", function (e) {
     }
 });
 
+
+
+
+
+
 // ----------------------------------------Contacts------------------------------------------
+
 const githubIcon = document.getElementById("github");
 const telegramIcon = document.getElementById("telegram");
 const whatsappIcon = document.getElementById("whatsapp");
